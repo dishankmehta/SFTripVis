@@ -1,0 +1,81 @@
+.leaflet-container {
+  height: 100%;
+  width: 100%;
+  margin: 0 auto;
+  z-index: 1;
+}
+
+.tooltip {
+  pointer-events: none; 
+  position: absolute; 
+  z-index: 9; 
+  font-size: 15px; 
+  padding: 8px; 
+  background: #000; 
+  border-radius: 3px;
+  color: #fff; 
+  min-width: 160px; 
+  max-height: 240px; 
+  overflow-y: hidden;
+}
+
+
+.legend {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  width: 254px;
+  background: #fff;
+  box-shadow: 0 0 4px rgba(0,0,0,.15);
+  margin: 24px;
+  padding: 12px 16px;
+  outline: none;
+  z-index: 10;
+}
+
+
+.legend-title {
+  margin: 5% 0%;
+  font-size: 1em;
+  font-weight: 500;
+}
+
+.legend-container {
+  height: auto;
+  width: 100%;
+  padding: 0 16px;
+  margin-top: 16.6px;
+  margin-bottom: 16.6px;
+}
+
+.legend-color-container {
+  float: left;
+}
+
+.legend-color-container > div {
+  width: 20px;
+  height: 30px;
+}
+
+.speed-title {
+  font-size: 0.85em;
+}
+
+.legend-name-container {
+  width: 85%;
+  font-size: 0.85em;
+  float: right;
+}
+
+.legend-name-container > div {
+  vertical-align: middle;
+  height: 30px;
+  line-height: 30px;
+}
+
+.info-popover {
+  position: relative;
+  top: 2%;
+  left: 2%;
+  z-index: 10;
+}

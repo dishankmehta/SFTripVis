@@ -1,0 +1,43 @@
+.ant-dropdown-menu {
+    height: 100% !important;
+    overflow-y: scroll !important;
+}
+
+
+
+.ant-dropdown {
+    top: 46.993103px !important;
+    height: 500px !important;
+}
+
+
+.ant-dropdown-link {
+    color: #fff;
+}
+
+.menu {
+    width: max-content;
+    float: left;
+    position: relative;
+    font-size: 1.2em;
+    color: #fff;
+    margin-top: 1% !important;
+}
+
+.menu1 {
+    margin-left: 10%;
+}
+
+.menu2 {
+    margin-left: 14%;
+}
+
+.menu3 {
+    margin-left: 10%;
+}
+
+.menu > a[disabled] {
+    color: rgba(255, 255, 255, 0.25);
+    cursor: not-allowed;
+    pointer-events: none;
+}
