@@ -1,0 +1,29 @@
+version: "3.5"
+
+services:
+  app:
+    container_name: frontend
+    build: .
+    image: frontend-latest
+    volumes:
+      - ./:/deploy/app
+    environment:
+      - NODE_ENV=production
+      - CHOKIDAR_USEPOLLING=true
+    ports:
+      - "5000:5000"
+    depends_on:
+      - elastic
+    restart: always
+
+  elastic:
+    container_name: elastic
+    build:
+      context: .
+      dockerfile: Dockerfile-elastic
+    volumes:
+      - ./esdata:/usr/share/elasticsearch/data
+    ports:
+      - "9200:9200"
+      - "9300:9300"
+    restart: always
